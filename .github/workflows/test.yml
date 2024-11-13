@@ -22,7 +22,6 @@ jobs:
           path: playwrigth-report
           retention-days: 5
 
-      - name: Create Release
       - run: clang ./main.c -o output
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
